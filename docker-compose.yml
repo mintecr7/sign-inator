@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/home/ubuntu/backend
+    ports:
+      - "8000:8000"
+      - "8888:8888"
+    # env_file:
+    #   - .env
+
+  redis:
+    image: redis:latest
