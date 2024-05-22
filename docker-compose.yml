@@ -11,3 +11,11 @@ services:
 
   redis:
     image: redis:latest
+
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/home/node/frontend
+      - /home/node/frontend/node_modules
+    ports:
+      - "3000:3000"
