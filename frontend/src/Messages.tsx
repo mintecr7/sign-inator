@@ -24,11 +24,11 @@ const Messages = () => {
   return (
     <div className="ml-10 p-2 bg-gray-100 w-96 rounded-lg shadow-lg">
       <h1 className="text-center text-2xl font-bold mb-4">Messages</h1>
-      <div className="h-96 overflow-y-scroll p-2">
+      <div className="h-[500px] overflow-y-scroll p-2">
         {messages.map((message) => (
           <div
             key={message.id}
-            className="mb-4 p-4 bg-blue-100 rounded-lg shadow-md w-64"
+            className="mt-4 p-4 bg-blue-100 rounded-lg shadow-md w-64"
           >
             {message.text}
           </div>
